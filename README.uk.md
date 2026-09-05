@@ -41,7 +41,7 @@ Minecraft-лаунчер, який я активно розробляю й до�
 
 - **[wordpress-mcp](https://github.com/Faneraiy14/wordpress-mcp)** — MCP-сервер для WordPress (стан сайту, пости, плагіни), збудований на офіційному `modelcontextprotocol/php-sdk`.
 - **[minecraft-rcon-mcp](https://github.com/Faneraiy14/minecraft-rcon-mcp)** — дає AI керувати живим Minecraft-сервером через RCON (гравці, чат, телепорт, погода і не тільки).
-- **[workspace-status-mcp](https://github.com/Faneraiy14/workspace-status-mcp)** — один виклик для повного знімка git+CI-статусу по всіх репо в теці.
+- **[workspace-status-mcp](https://github.com/Faneraiy14/workspace-status-mcp)** — п'ять інструментів для роботи з десятками репо одразу: знімок git+CI-статусу, які документи `Architecture/<repo>.txt` відсутні чи застаріли, дрейф релізу між репо-джерелом і репо, що з нього тегує релізи, і пакетна перевірка статусу GitHub PR (стан, CI, рішення рев'ю, кількість top-level і inline коментарів окремо).
 - **[ci-watch-mcp](https://github.com/Faneraiy14/ci-watch-mcp)** — чекає завершення прогону GitHub Actions і звітує результат, щоб AI не опитував вручну.
 
 *(NyxilumMcp уже в списку вище, під Nyxilum — це теж MCP-сервер.)*
@@ -65,5 +65,5 @@ Minecraft-лаунчер, який я активно розробляю й до�
 
 ## Контриб'юшени в чужі проєкти
 
-- **[cyklokoalicia/OpenSourceBikeShare](https://github.com/cyklokoalicia/OpenSourceBikeShare)** — реальна, жива система шерингу велосипедів у Братиславі. Кілька змерджених PR (налаштування PHPStan + 82 фікси, реальні баги, знайдені під час рев'ю).
+- **[cyklokoalicia/OpenSourceBikeShare](https://github.com/cyklokoalicia/OpenSourceBikeShare)** — реальна, жива система шерингу велосипедів у Братиславі. 9 змерджених PR: впровадив статичний аналіз PHPStan (рівень 4) і виправив усі 82 знайдені помилки, далі — низка реальних багів, знайдених під час рев'ю коду та розслідування CI: `TypeError`-крах на старих записах кредитної історії, баг генератора купонів, що міг тихо видати менше кодів, ніж запитано (або зіткнутись на `UNIQUE`-колонці), відсутній `ext-intl`, що ламав ICU-переклади, і регресія Symfony-патча безпеки, яка ламала сесії при зміні пароля.
 - **[modelcontextprotocol/php-sdk](https://github.com/modelcontextprotocol/php-sdk)** — офіційний PHP SDK для MCP. Один змерджений PR (варіативні параметри тулів).

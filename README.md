@@ -40,7 +40,7 @@ about it.
 
 - **[wordpress-mcp](https://github.com/Faneraiy14/wordpress-mcp)** — an MCP server for WordPress (site health, posts, plugins), built on the official `modelcontextprotocol/php-sdk`.
 - **[minecraft-rcon-mcp](https://github.com/Faneraiy14/minecraft-rcon-mcp)** — lets an AI control a live Minecraft server over RCON (players, chat, teleport, weather, and more).
-- **[workspace-status-mcp](https://github.com/Faneraiy14/workspace-status-mcp)** — one call for a full git+CI status snapshot across every repo in a folder.
+- **[workspace-status-mcp](https://github.com/Faneraiy14/workspace-status-mcp)** — five tools for working across dozens of repos at once: a git+CI status snapshot, which `Architecture/<repo>.txt` docs are missing or stale, release drift between a source repo and the one that tags releases from it, and a batched GitHub PR status check (state, CI, review decision, top-level vs. inline comment counts).
 - **[ci-watch-mcp](https://github.com/Faneraiy14/ci-watch-mcp)** — waits for a GitHub Actions run to finish and reports the result, so an AI doesn't have to poll.
 
 *(NyxilumMcp is listed above, under Nyxilum — it's an MCP server too.)*
@@ -64,5 +64,5 @@ about it.
 
 ## Contributions to other projects
 
-- **[cyklokoalicia/OpenSourceBikeShare](https://github.com/cyklokoalicia/OpenSourceBikeShare)** — a real, live bike-sharing system in Bratislava. Several merged PRs (PHPStan setup + 82 fixes, real bug fixes found via code review).
+- **[cyklokoalicia/OpenSourceBikeShare](https://github.com/cyklokoalicia/OpenSourceBikeShare)** — a real, live bike-sharing system in Bratislava. 9 merged PRs: introduced PHPStan static analysis (level 4) and fixed all 82 errors it found, then a string of real bugs found via code review and CI investigation — a `TypeError` crash on legacy credit-history rows, a coupon-generator bug that could silently issue fewer codes than requested (or collide on a `UNIQUE` column), missing `ext-intl` that broke ICU translations, and a Symfony security-patch regression that broke password-change sessions.
 - **[modelcontextprotocol/php-sdk](https://github.com/modelcontextprotocol/php-sdk)** — the official PHP SDK for MCP. One merged PR (variadic tool parameters).
