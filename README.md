@@ -33,6 +33,12 @@ A Minecraft launcher I actively develop and ship to real users.
 - **[fl-launcher](https://github.com/Faneraiy14/fl-launcher)** — the release channel (auto-updating `.exe`); source lives in a separate private repo.
 - **[fl-bridge](https://github.com/Faneraiy14/fl-bridge)** — releases of `FLBridge.jar`, the mod loader FL Launcher downloads and updates automatically.
 
+## NyxilumCMS
+
+A general-purpose content management system, built from scratch — PHP + MySQL, no framework.
+
+- **[NyxilumCMS](https://github.com/Faneraiy14/NyxilumCMS)** — content of any type, categories, menu, media, roles (admin/editor) with TOTP two-factor login, scheduled publishing, SEO/Open Graph tags, sitemap.xml + RSS, full export/import, and a from-scratch web installer. A companion MCP server gives an AI assistant direct database access (kept private).
+
 ## MCP servers
 
 Tools that let an AI assistant do something real instead of just talking
