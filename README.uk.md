@@ -73,3 +73,22 @@ Minecraft-лаунчер, який я активно розробляю й до�
 
 - **[cyklokoalicia/OpenSourceBikeShare](https://github.com/cyklokoalicia/OpenSourceBikeShare)** — реальна, жива система шерингу велосипедів у Братиславі. 9 змерджених PR: впровадив статичний аналіз PHPStan (рівень 4) і виправив усі 82 знайдені помилки, далі — низка реальних багів, знайдених під час рев'ю коду та розслідування CI: `TypeError`-крах на старих записах кредитної історії, баг генератора купонів, що міг тихо видати менше кодів, ніж запитано (або зіткнутись на `UNIQUE`-колонці), відсутній `ext-intl`, що ламав ICU-переклади, і регресія Symfony-патча безпеки, яка ламала сесії при зміні пароля.
 - **[modelcontextprotocol/php-sdk](https://github.com/modelcontextprotocol/php-sdk)** — офіційний PHP SDK для MCP. Один змерджений PR (варіативні параметри тулів).
+- **[sveneld/mailqueue](https://github.com/sveneld/mailqueue)** — фреймворк-агностичний пакет черги листів для PHP (адаптери Symfony/Yii2, доставка з ретраями). 2 відкритих PR: підняв статичний аналіз PHPStan з рівня 8 до рівня 9, додав підтримку CC/BCC-отримувачів у `EmailMessage` й усіх реальних транспортах.
+
+## Якість коду
+
+Кожен PHP-проєкт нижче ганяє статичний аналіз і автоматичний набір
+тестів у CI на кожен пуш — не просто "у мене працює".
+
+| Проєкт | PHPStan | Тести |
+|---|---|---|
+| [NyxilumCMS](https://github.com/Faneraiy14/NyxilumCMS) | рівень 6 | PHPUnit, б'є по реальній одноразовій MySQL |
+| [wordpress-mcp](https://github.com/Faneraiy14/wordpress-mcp) | max | PHPUnit |
+| [anylint](https://github.com/Faneraiy14/anylint) | max | власний раннер, 64 перевірки |
+| [secretscan](https://github.com/Faneraiy14/secretscan) | max | власний раннер, 36 перевірок |
+| [envcheck](https://github.com/Faneraiy14/envcheck) | max | власний раннер, 35 перевірок |
+
+(Рівень PHPStan — наскільки строга перевірка типів; `max` ловить усе,
+крім власних розширень-правил; обирається окремо для кожного проєкту
+на найвищому рівні, де кожна знахідка реальна, а не фальш-спрацювання
+від заглушки, яку PHPStan не бачить наскрізь.)

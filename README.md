@@ -72,3 +72,22 @@ about it.
 
 - **[cyklokoalicia/OpenSourceBikeShare](https://github.com/cyklokoalicia/OpenSourceBikeShare)** — a real, live bike-sharing system in Bratislava. 9 merged PRs: introduced PHPStan static analysis (level 4) and fixed all 82 errors it found, then a string of real bugs found via code review and CI investigation — a `TypeError` crash on legacy credit-history rows, a coupon-generator bug that could silently issue fewer codes than requested (or collide on a `UNIQUE` column), missing `ext-intl` that broke ICU translations, and a Symfony security-patch regression that broke password-change sessions.
 - **[modelcontextprotocol/php-sdk](https://github.com/modelcontextprotocol/php-sdk)** — the official PHP SDK for MCP. One merged PR (variadic tool parameters).
+- **[sveneld/mailqueue](https://github.com/sveneld/mailqueue)** — a framework-agnostic mail queue package for PHP (Symfony/Yii2 adapters, retry-friendly delivery). 2 open PRs: raised PHPStan static analysis from level 8 to level 9, added CC/BCC recipient support across `EmailMessage` and every real transport.
+
+## Code quality
+
+Every PHP project below runs static analysis and an automated test
+suite in CI on every push — not just "it works on my machine."
+
+| Project | PHPStan | Tests |
+|---|---|---|
+| [NyxilumCMS](https://github.com/Faneraiy14/NyxilumCMS) | level 6 | PHPUnit, hits a real disposable MySQL DB |
+| [wordpress-mcp](https://github.com/Faneraiy14/wordpress-mcp) | max | PHPUnit |
+| [anylint](https://github.com/Faneraiy14/anylint) | max | custom runner, 64 checks |
+| [secretscan](https://github.com/Faneraiy14/secretscan) | max | custom runner, 36 checks |
+| [envcheck](https://github.com/Faneraiy14/envcheck) | max | custom runner, 35 checks |
+
+(PHPStan level is how strict the type-checking is — `max` catches
+everything short of custom rule extensions; picked per-project at the
+highest level where every finding is real, not a false positive from
+a stub PHPStan can't see past.)
