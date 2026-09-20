@@ -83,9 +83,9 @@ suite in CI on every push — not just "it works on my machine."
 |---|---|---|
 | [NyxilumCMS](https://github.com/Faneraiy14/NyxilumCMS) | level 6 | PHPUnit, hits a real disposable MySQL DB |
 | [wordpress-mcp](https://github.com/Faneraiy14/wordpress-mcp) | max | PHPUnit |
-| [anylint](https://github.com/Faneraiy14/anylint) | max | custom runner, 64 checks |
-| [secretscan](https://github.com/Faneraiy14/secretscan) | max | custom runner, 36 checks |
-| [envcheck](https://github.com/Faneraiy14/envcheck) | max | custom runner, 35 checks |
+| [anylint](https://github.com/Faneraiy14/anylint) | max | PHPUnit, 106 tests (incl. a 15-language tree-sitter matrix) |
+| [secretscan](https://github.com/Faneraiy14/secretscan) | max | PHPUnit, 27 tests |
+| [envcheck](https://github.com/Faneraiy14/envcheck) | max | PHPUnit, 14 tests |
 
 (PHPStan level is how strict the type-checking is — `max` catches
 everything short of custom rule extensions; picked per-project at the
