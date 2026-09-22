@@ -17,6 +17,7 @@
 - **[NyxilumMcp](https://github.com/Faneraiy14/NyxilumMcp)** — MCP-сервер, щоб AI-асистент міг компілювати, запускати, лінтити й вести REPL-сесію з `.nx`-кодом напряму, у пісочниці.
 - **[nyxilum-assert](https://github.com/Faneraiy14/nyxilum-assert)** — бібліотека тверджень для тестування коду NyxilumLang.
 - **[NyxilumEngine](https://github.com/Faneraiy14/NyxilumEngine)** — невеликий 2D ігровий рушій, GameObject/Component-стиль, повністю скриптований самою NyxilumLang (без вбудованої чужої мови скриптів) — з робочим прикладом-грою "ухилення від блоків, що падають".
+- **[nyxilum-engine-mcp](https://github.com/Faneraiy14/nyxilum-engine-mcp)** — MCP-сервер для NyxilumEngine — запуск прикладів/тестів рушія й довідник API напряму.
 
 ## Зроблено на Nyxilum
 
