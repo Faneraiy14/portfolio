@@ -26,6 +26,21 @@ own standard library, no external dependencies.
 - **[nyxilum-control-center](https://github.com/Faneraiy14/nyxilum-control-center)** — a live system monitor: web dashboard, WebSocket push, ping, history export to zip.
 - **[nyxilum-paste](https://github.com/Faneraiy14/nyxilum-paste)** — a Pastebin-style snippet-sharing service.
 
+## NyxOS — a custom operating system
+
+A kernel from scratch in C + assembly, with no Linux/BSD or any
+existing kernel underneath — not for practicality, but to control
+every level of the system personally, starting from the first byte
+after the bootloader. Interrupts, a physical memory manager and
+paging, its own filesystem (NyxFS), Ring 3 (userspace) with a
+preemptive scheduler, a graphical VESA/GOP mode with a window manager
+and desktop, networking (PCI/RTL8139/lwIP — DHCP/DNS/TCP/HTTP), its
+own package format and package manager, a minimal browser, user
+accounts, a real-disk GPT installer, and USB (UHCI) with its first
+real HID mouse.
+
+- **[NyxOS-releases](https://github.com/Faneraiy14/NyxOS-releases)** — ready-to-download ISO; source code lives in a separate private repo.
+
 ## FL Launcher
 
 A Minecraft launcher I actively develop and ship to real users.
