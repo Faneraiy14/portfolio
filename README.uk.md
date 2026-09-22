@@ -98,7 +98,7 @@ Minecraft-лаунчер, який я активно розробляю й до�
 |---|---|---|
 | [NyxilumCMS](https://github.com/Faneraiy14/NyxilumCMS) | рівень 6 | PHPUnit, б'є по реальній одноразовій MySQL |
 | [wordpress-mcp](https://github.com/Faneraiy14/wordpress-mcp) | max | PHPUnit |
-| [anylint](https://github.com/Faneraiy14/anylint) | max | PHPUnit, 106 тестів (включно з матрицею 15 мов через tree-sitter) |
+| [anylint](https://github.com/Faneraiy14/anylint) | max | PHPUnit, 111 тестів (включно з матрицею 15 мов через tree-sitter) |
 | [secretscan](https://github.com/Faneraiy14/secretscan) | max | PHPUnit, 27 тестів |
 | [envcheck](https://github.com/Faneraiy14/envcheck) | max | PHPUnit, 14 тестів |
 
