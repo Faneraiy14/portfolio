@@ -16,7 +16,7 @@ in the language itself.
 - **[NyxilumNode](https://github.com/Faneraiy14/NyxilumNode)** — the standalone runtime (`nx file.nx`), plus a package manager (`nx install owner/repo`). Ships as a ready `.exe` — no .NET install needed.
 - **[NyxilumMcp](https://github.com/Faneraiy14/NyxilumMcp)** — an MCP server so an AI assistant can compile, run, lint, and REPL-eval `.nx` code directly, sandboxed.
 - **[nyxilum-assert](https://github.com/Faneraiy14/nyxilum-assert)** — an assertion library for testing NyxilumLang code.
-- **[NyxilumEngine](https://github.com/Faneraiy14/NyxilumEngine)** — a small 2D game engine, GameObject/Component-style, scripted entirely in NyxilumLang (no embedded scripting language) — comes with a playable dodge-the-falling-blocks example.
+- **[NyxilumEngine](https://github.com/Faneraiy14/NyxilumEngine)** — a small 2D game engine, GameObject/Component-style, scripted entirely in NyxilumLang (no embedded scripting language) — comes with a playable dodge-the-falling-blocks example. The engine's own logic (GameObject/Scene/collisions) is plain, cross-platform NyxilumLang; only the actual rendered game window needs Windows (Windows Forms).
 - **[nyxilum-engine-mcp](https://github.com/Faneraiy14/nyxilum-engine-mcp)** — an MCP server for NyxilumEngine — run its examples/tests and query the API reference directly.
 
 ## Built with Nyxilum
