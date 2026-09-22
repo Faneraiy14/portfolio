@@ -16,6 +16,7 @@
 - **[NyxilumNode](https://github.com/Faneraiy14/NyxilumNode)** — самостійний рантайм (`nx файл.nx`), плюс пакетний менеджер (`nx install owner/repo`). Готовий `.exe` — .NET встановлювати не треба.
 - **[NyxilumMcp](https://github.com/Faneraiy14/NyxilumMcp)** — MCP-сервер, щоб AI-асистент міг компілювати, запускати, лінтити й вести REPL-сесію з `.nx`-кодом напряму, у пісочниці.
 - **[nyxilum-assert](https://github.com/Faneraiy14/nyxilum-assert)** — бібліотека тверджень для тестування коду NyxilumLang.
+- **[NyxilumEngine](https://github.com/Faneraiy14/NyxilumEngine)** — невеликий 2D ігровий рушій, GameObject/Component-стиль, повністю скриптований самою NyxilumLang (без вбудованої чужої мови скриптів) — з робочим прикладом-грою "ухилення від блоків, що падають".
 
 ## Зроблено на Nyxilum
 
