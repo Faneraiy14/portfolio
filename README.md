@@ -5,6 +5,14 @@
 A map of what I've built — [github.com/Faneraiy14](https://github.com/Faneraiy14).
 Grouped by what they actually are, not by when I made them.
 
+## Portfolio site
+
+**[my-hub.luchezarikcentr.com](https://my-hub.luchezarikcentr.com)** — a subdomain
+of my mom's site (the original domain is [luchezarikcentr.com](https://luchezarikcentr.com)).
+Built on my own [NyxilumCMS](https://github.com/Faneraiy14/NyxilumCMS) — the site
+itself is a live example of that project running in production. Still actively
+being written/reworked; this README stays the full, up-to-date project list.
+
 ## Nyxilum — my own programming language
 
 A bytecode compiler + stack VM built from scratch, with its own standard
