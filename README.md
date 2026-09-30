@@ -19,7 +19,7 @@ A bytecode compiler + stack VM built from scratch, with its own standard
 library and package manager. Self-hosted — its own interpreter is written
 in the language itself.
 
-- **[NyxilumLang](https://github.com/Faneraiy14/NyxilumLang)** — the language: compiler, VM, 170 built-in functions (math, strings, HTTP + WebSocket server, 2D graphics, GUI, concurrency, an embedded DB, OS process control, zip/regex). Also compiles straight to native x86 (no VM at all) — real modules of a hobby OS kernel are written in it, compiled this way, and boot in QEMU.
+- **[NyxilumLang](https://github.com/Faneraiy14/NyxilumLang)** — the language: compiler, VM, 170 built-in functions (math, strings, HTTP + WebSocket server, 2D graphics, GUI, concurrency, an embedded DB, OS process control, zip/regex). Also compiles straight to native x86 (no VM at all) — real modules of a hobby OS kernel are written in it, compiled this way, and boot in QEMU. Ships its own PostgreSQL and MySQL/MariaDB clients written in the language itself on top of raw TCP — including SCRAM-SHA-256 / caching_sha2 auth and all the crypto (SHA-1/SHA-256/MD5/HMAC/PBKDF2) with no native library.
 - **[NyxilumDb](https://github.com/Faneraiy14/NyxilumDb)** — the embedded key-value database NyxilumLang's `dbOpen()` runs on, with WAL durability.
 - **[NyxilumNode](https://github.com/Faneraiy14/NyxilumNode)** — the standalone runtime (`nx file.nx`), plus a package manager (`nx install owner/repo`). Ships as a ready `.exe` — no .NET install needed.
 - **[NyxilumMcp](https://github.com/Faneraiy14/NyxilumMcp)** — an MCP server so an AI assistant can compile, run, lint, and REPL-eval `.nx` code directly, sandboxed.
