@@ -19,7 +19,7 @@ A bytecode compiler + stack VM built from scratch, with its own standard
 library and package manager. Self-hosted — its own interpreter is written
 in the language itself.
 
-- **[NyxilumLang](https://github.com/Faneraiy14/NyxilumLang)** — the language: compiler, VM, 170 built-in functions (math, strings, HTTP + WebSocket server, 2D graphics, GUI, concurrency, an embedded DB, OS process control, zip/regex). Also compiles straight to native x86 (no VM at all) — real modules of a hobby OS kernel are written in it, compiled this way, and boot in QEMU. Ships its own PostgreSQL and MySQL/MariaDB clients written in the language itself on top of raw TCP — including SCRAM-SHA-256 / caching_sha2 auth and all the crypto (SHA-1/SHA-256/MD5/HMAC/PBKDF2) with no native library.
+- **[NyxilumLang](https://github.com/Faneraiy14/NyxilumLang)** — the language: compiler, VM, 170 built-in functions (math, strings, HTTP + WebSocket server, 2D graphics, GUI, concurrency, an embedded DB, OS process control, zip/regex). Also compiles straight to native machine code with no VM at all: to x86 — real modules of a hobby OS kernel are written in it, compiled this way, and boot in QEMU — and to ARM64 for Android/Linux phones (dynamic values, most of its native standard library written in NyxilumLang itself, verified on a real phone). Android apps are built on top of a small fixed Java "translator", with all app logic in NyxilumLang. Ships its own PostgreSQL and MySQL/MariaDB clients written in the language itself on top of raw TCP — including SCRAM-SHA-256 / caching_sha2 auth and all the crypto (SHA-1/SHA-256/MD5/HMAC/PBKDF2) with no native library.
 - **[NyxilumDb](https://github.com/Faneraiy14/NyxilumDb)** — the embedded key-value database NyxilumLang's `dbOpen()` runs on, with WAL durability.
 - **[NyxilumNode](https://github.com/Faneraiy14/NyxilumNode)** — the standalone runtime (`nx file.nx`), plus a package manager (`nx install owner/repo`). Ships as a ready `.exe` — no .NET install needed.
 - **[NyxilumMcp](https://github.com/Faneraiy14/NyxilumMcp)** — an MCP server so an AI assistant can compile, run, lint, and REPL-eval `.nx` code directly, sandboxed.
@@ -32,6 +32,7 @@ in the language itself.
 Real applications, not toy demos — each running entirely on NyxilumLang's
 own standard library, no external dependencies.
 
+- **Mayak** ([Telegram bot](https://t.me/MayakAssistant_bot), [Android app builds](https://github.com/Faneraiy14/mayak-releases)) — a Telegram bot that does almost everything: alarms, timers, repeating reminders, pomodoro, NBU exchange rates and converter, travel spending, weather, checklists, habits, notes, calculator; three languages, a menu by categories built from a feature registry. Its Android companion app is NyxilumLang compiled to ARM64: it puts the bot's alarms and timers into the phone's built-in Clock, so they ring like real alarms. (Bot source is private; app builds are public.)
 - **[nyxilum-chat](https://github.com/Faneraiy14/nyxilum-chat)** — a live group chat: real one-to-many WebSocket broadcast.
 - **[nyxilum-control-center](https://github.com/Faneraiy14/nyxilum-control-center)** — a live system monitor: web dashboard, WebSocket push, ping, history export to zip.
 - **[nyxilum-paste](https://github.com/Faneraiy14/nyxilum-paste)** — a Pastebin-style snippet-sharing service.
