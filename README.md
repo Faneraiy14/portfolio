@@ -47,8 +47,11 @@ paging, its own filesystem (NyxFS), Ring 3 (userspace) with a
 preemptive scheduler, a graphical VESA/GOP mode with a window manager
 and desktop, networking (PCI/RTL8139/lwIP — DHCP/DNS/TCP/HTTP), its
 own package format and package manager, a minimal browser, user
-accounts, a real-disk GPT installer, and USB (UHCI) with its first
-real HID mouse.
+accounts, a real-disk GPT installer, USB (UHCI) with a real HID
+keyboard and mouse (boot protocol), real ACPI power-off/reboot that
+works under UEFI too (via a Multiboot2 handoff from GRUB), and a small
+user-space C library with file syscalls — so programs are written in
+plain C against NyxFS, not hand-assembled.
 
 - **[NyxOS-releases](https://github.com/Faneraiy14/NyxOS-releases)** — ready-to-download ISO; source code lives in a separate private repo.
 
