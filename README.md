@@ -57,7 +57,7 @@ plain C against NyxFS, not hand-assembled.
 
 ## FL Launcher
 
-A Minecraft launcher I actively develop and ship to real users on Windows and Linux (Electron). Games start as a separate process, so the launcher can be closed while you play; builds launch offline once downloaded; the interface has a redesigned dark/light theme with an accent colour and a built-in guided tour. A companion server (Express + PostgreSQL) powers an optional launcher account with cosmetics, an in-game currency, cases and a daily wheel.
+A Minecraft launcher I actively develop and ship to real users on Windows and Linux (Electron). Games start as a separate process, so the launcher can be closed while you play; builds launch offline once downloaded; the interface has a redesigned dark/light theme with an accent colour and a built-in guided tour. A companion server (Express + PostgreSQL) powers an optional launcher account with cosmetics, an in-game currency, cases and a daily wheel. It also has built-in optimization and repair tools, snapshots with rollback, shareable build codes, an in-game client, and friends with a chat that keeps its history only on the user's own computer. **[Full feature list](https://github.com/Faneraiy14/fl-launcher/blob/main/FEATURES.md)**.
 
 - **[fl-launcher](https://github.com/Faneraiy14/fl-launcher)** — the release channel (auto-updating `.exe`, `.AppImage`, `.deb`); source lives in a separate private repo.
 - **[fl-bridge](https://github.com/Faneraiy14/fl-bridge)** — releases of `FLBridge.jar`, the mod loader FL Launcher downloads and updates automatically; it supports Minecraft from 1.14.4 to the newest 26.x releases on Java 8–25 (ASM bytecode hooks chosen per game version, tested on a version matrix).
