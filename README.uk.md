@@ -72,6 +72,7 @@ Minecraft-лаунчер (Electron), який я активно розробля
 
 - **[fl-launcher](https://github.com/Faneraiy14/fl-launcher)** — канал релізів (`.exe`, `.AppImage`, `.deb` з автооновленням); вихідний код лежить в окремому приватному репо.
 - **[fl-bridge](https://github.com/Faneraiy14/fl-bridge)** — релізи `FLBridge.jar`, мод-лоадера, який FL Launcher завантажує й оновлює автоматично; підтримує Minecraft від 1.14.4 до найновіших 26.x на Java 8–25 (ASM-хуки обираються під версію гри, перевірено матрицею версій).
+- **[fl-mods](https://github.com/Faneraiy14/fl-mods)** — готові моди для FL Loader (зум, показ ситості, таймери ефектів, інфо про блок, міцність та інше), один jar на мод для Minecraft 1.14.4–26.3, ставляться з вікна «Моди» лаунчера; лише релізи, код приватний.
 - **[FL-Skin-Studio-releases](https://github.com/Faneraiy14/FL-Skin-Studio-releases)** — FL Skin Studio, редактор скінів для Windows і Linux (2D-розгортка + 3D-малювання, шари, обмін із Blockbench); скіни зберігаються прямо в лаунчер. Вихідний код приватний.
 
 ## NyxilumCMS

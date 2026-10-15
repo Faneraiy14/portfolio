@@ -63,6 +63,7 @@ A Minecraft launcher I actively develop and ship to real users on Windows and Li
 
 - **[fl-launcher](https://github.com/Faneraiy14/fl-launcher)** — the release channel (auto-updating `.exe`, `.AppImage`, `.deb`); source lives in a separate private repo.
 - **[fl-bridge](https://github.com/Faneraiy14/fl-bridge)** — releases of `FLBridge.jar`, the mod loader FL Launcher downloads and updates automatically; it supports Minecraft from 1.14.4 to the newest 26.x releases on Java 8–25 (ASM bytecode hooks chosen per game version, tested on a version matrix).
+- **[fl-mods](https://github.com/Faneraiy14/fl-mods)** — ready-made mods for FL Loader (zoom, hunger/saturation info, potion timers, block info, durability and more), one jar per mod for Minecraft 1.14.4–26.3, installed from the launcher's "Mods" window; releases only, source is private.
 - **[FL-Skin-Studio-releases](https://github.com/Faneraiy14/FL-Skin-Studio-releases)** — FL Skin Studio, a skin editor for Windows and Linux (2D layout + 3D painting, layers, Blockbench exchange); skins can be saved straight into the launcher. Source is private.
 
 ## NyxilumCMS
