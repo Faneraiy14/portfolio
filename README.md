@@ -37,6 +37,7 @@ own standard library, no external dependencies.
 - **[nyxilum-chat](https://github.com/Faneraiy14/nyxilum-chat)** — a live group chat: real one-to-many WebSocket broadcast.
 - **[nyxilum-control-center](https://github.com/Faneraiy14/nyxilum-control-center)** — a live system monitor: web dashboard, WebSocket push, ping, history export to zip.
 - **[nyxilum-paste](https://github.com/Faneraiy14/nyxilum-paste)** — a Pastebin-style snippet-sharing service.
+- **[nyxilum-memory-mcp](https://github.com/Faneraiy14/nyxilum-memory-mcp)** — "detail memory" for long AI-coding sessions (also under *MCP servers*): the MCP protocol itself (JSON-RPC over stdio), the storage and the own search/scoring are all written in NyxilumLang — no SDK, no database, no libraries; Node appears only in the tests.
 
 ## NyxOS — a custom operating system
 
@@ -78,10 +79,10 @@ about it.
 - **[wordpress-mcp](https://github.com/Faneraiy14/wordpress-mcp)** — an MCP server for WordPress (site health, posts, plugins), built on the official `modelcontextprotocol/php-sdk`.
 - **[minecraft-rcon-mcp](https://github.com/Faneraiy14/minecraft-rcon-mcp)** — lets an AI control a live Minecraft server over RCON (players, chat, teleport, weather, and more).
 - **[workspace-status-mcp](https://github.com/Faneraiy14/workspace-status-mcp)** — five tools for working across dozens of repos at once: a git+CI status snapshot, which `Architecture/<repo>.txt` docs are missing or stale, release drift between a source repo and the one that tags releases from it, and a batched GitHub PR status check (state, CI, review decision, top-level vs. inline comment counts).
-- **[nyxilum-memory-mcp](https://github.com/Faneraiy14/nyxilum-memory-mcp)** — "detail memory" for long AI-coding sessions, written in pure NyxilumLang: it keeps the *why* (decisions and reasons, rejected options, side findings, nuances), pulls back only what the current task needs (own scoring, no libraries), and archives/deletes old entries only with the human's confirmation (a one-time phrase for real deletion).
+- **[nyxilum-memory-mcp](https://github.com/Faneraiy14/nyxilum-memory-mcp)** — "detail memory" for long AI-coding sessions, written in pure NyxilumLang (also under Built with Nyxilum): it keeps the *why* (decisions and reasons, rejected options, side findings, nuances), pulls back only what the current task needs (own scoring, no libraries), and archives/deletes old entries only with the human's confirmation (a one-time phrase for real deletion).
 - **[ci-watch-mcp](https://github.com/Faneraiy14/ci-watch-mcp)** — waits for a GitHub Actions run to finish and reports the result, so an AI doesn't have to poll.
 
-*(NyxilumMcp is listed above, under Nyxilum — it's an MCP server too.)*
+*(Cross-listed, since they are MCP servers too: NyxilumMcp and nyxilum-engine-mcp are under Nyxilum above; nyxilum-memory-mcp is also under Built with Nyxilum — it is written entirely in NyxilumLang.)*
 
 ## Dev tools
 
