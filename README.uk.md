@@ -87,6 +87,7 @@ Minecraft-лаунчер (Electron), який я активно розробля
 - **[wordpress-mcp](https://github.com/Faneraiy14/wordpress-mcp)** — MCP-сервер для WordPress (стан сайту, пости, плагіни), збудований на офіційному `modelcontextprotocol/php-sdk`.
 - **[minecraft-rcon-mcp](https://github.com/Faneraiy14/minecraft-rcon-mcp)** — дає AI керувати живим Minecraft-сервером через RCON (гравці, чат, телепорт, погода і не тільки).
 - **[workspace-status-mcp](https://github.com/Faneraiy14/workspace-status-mcp)** — п'ять інструментів для роботи з десятками репо одразу: знімок git+CI-статусу, які документи `Architecture/<repo>.txt` відсутні чи застаріли, дрейф релізу між репо-джерелом і репо, що з нього тегує релізи, і пакетна перевірка статусу GitHub PR (стан, CI, рішення рев'ю, кількість top-level і inline коментарів окремо).
+- **[nyxilum-memory-mcp](https://github.com/Faneraiy14/nyxilum-memory-mcp)** — «памʼять деталей» для довгих сесій з AI на чистій NyxilumLang: тримає *чому* (рішення й причини, відкинуті варіанти, побічні знахідки, нюанси), підтягує лише потрібне для поточної задачі (власний рахунок, без бібліотек), а старе архівує/видаляє тільки з підтвердження людини (для справжнього видалення — одноразова фраза).
 - **[ci-watch-mcp](https://github.com/Faneraiy14/ci-watch-mcp)** — чекає завершення прогону GitHub Actions і звітує результат, щоб AI не опитував вручну.
 
 *(NyxilumMcp уже в списку вище, під Nyxilum — це теж MCP-сервер.)*
