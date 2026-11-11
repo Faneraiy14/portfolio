@@ -57,6 +57,12 @@ plain C against NyxFS, not hand-assembled.
 
 - **[NyxOS-releases](https://github.com/Faneraiy14/NyxOS-releases)** — ready-to-download ISO; source code lives in a separate private repo.
 
+## HEXFALL — a mobile arena game on my own engine
+
+A 3v3 arena game for Android and PC (Brawl-Stars-like), written in C++17 on **HX**, my own small engine over SDL2 + OpenGL ES 2 (no Unity/Unreal): 7 mages, each with an attack, a super and a **Seal** — a zone with its own rules that can clash with enemy Seals; 3D models in a custom text format with animation formulas, all sounds synthesized in code (no audio files). Modes: Battle with a collapsing arena finale, Shard Fall, Stronghold, Showdown (solo/duo/trio with power crates), co-op Horde against a boss, and a seasonal mode whose rule changes every season. Bots have personalities and remember you as a nemesis; online play runs on a headless server using the same simulation, with friend rooms. Seasons every 6 weeks with a season track, gifts and new maps; auto-update from GitHub releases. Currently in closed testing.
+
+- **[hexfall-releases](https://github.com/Faneraiy14/hexfall-releases)** — Android builds (closed test: the APK only starts with a tester key); the game and engine source live in private repos.
+
 ## FL Launcher
 
 A Minecraft launcher I actively develop and ship to real users on Windows and Linux (Electron). Games start as a separate process, so the launcher can be closed while you play; builds launch offline once downloaded; the interface has a redesigned dark/light theme with an accent colour and a built-in guided tour. A companion server (PHP + MariaDB, private repo) powers an optional launcher account with cosmetics, an in-game currency, cases and a daily wheel, with login protected by an escalating per-IP-and-nick lockout. The same server hosts the portal site **[flhub.luchezarikcentr.com](https://flhub.luchezarikcentr.com)**: launcher and Voxelin pages plus a browser player cabinet (tabs, cosmetics by type, cases, wheel, friends) over an animated pixel-art background — no frameworks, strict CSP. It also has built-in optimization and repair tools, snapshots with rollback, shareable build codes, an in-game client, and friends with a chat that keeps its history only on the user's own computer. **[Full feature list](https://github.com/Faneraiy14/fl-launcher/blob/main/FEATURES.md)**.
