@@ -59,9 +59,9 @@ plain C against NyxFS, not hand-assembled.
 
 ## HEXFALL — a mobile arena game on my own engine
 
-A 3v3 arena game for Android and PC (Brawl-Stars-like), written in C++17 on **HX**, my own small engine over SDL2 + OpenGL ES 2 (no Unity/Unreal): 7 mages, each with an attack, a super and a **Seal** — a zone with its own rules that can clash with enemy Seals; 3D models in a custom text format with animation formulas, all sounds synthesized in code (no audio files). Modes: Battle with a collapsing arena finale, Shard Fall, Stronghold, Showdown (solo/duo/trio with power crates), co-op Horde against a boss, and a seasonal mode whose rule changes every season. Bots have personalities and remember you as a nemesis; online play runs on a headless server using the same simulation, with friend rooms. Seasons every 6 weeks with a season track, gifts and new maps; auto-update from GitHub releases. Currently in closed testing.
+A 3v3 arena game for Android and PC (Brawl-Stars-like), written in C++17 on **HX**, my own small engine over SDL2 + OpenGL ES 2 (no Unity/Unreal): 7 mages, each with an attack, a super and a **Seal** — a zone with its own rules that can clash with enemy Seals; 3D models in a custom text format with animation formulas, all sounds synthesized in code (no audio files). Modes: Battle with a collapsing arena finale, Shard Fall, Stronghold, Showdown (solo/duo/trio with power crates), co-op Horde against a boss, and a seasonal mode whose rule changes every season. Bots have personalities and remember you as a nemesis; online play runs on a headless server using the same simulation, with friend rooms. Seasons every 6 weeks with a season track, gifts and new maps; auto-update from GitHub releases. Open release since 12.11.2026 (Android, auto-updating); internet play is coming later.
 
-- **[hexfall-releases](https://github.com/Faneraiy14/hexfall-releases)** — Android builds (closed test: the APK only starts with a tester key); the game and engine source live in private repos.
+- **[hexfall-releases](https://github.com/Faneraiy14/hexfall-releases)** — Android builds to download and install; the game and engine source live in private repos.
 
 ## FL Launcher
 
